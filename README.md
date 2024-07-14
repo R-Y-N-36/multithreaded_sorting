@@ -14,6 +14,9 @@ This repository implements three popular sorting algorithms (Merge Sort, Quick S
 2. **Quick Sort**: Another divide-and-conquer algorithm that selects a 'pivot' element and partitions the array into elements less than and greater than the pivot, recursively sorting the partitions.
 3. **Bubble Sort**: A simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
+## Requirements
+- Python 3.x
+
 ## Usage
 1. Clone the repository:
    ```bash
@@ -25,8 +28,5 @@ This repository implements three popular sorting algorithms (Merge Sort, Quick S
    ```bash
    python main.py
    ```
-
-## Requirements
-- Python 3.x
 
 No additional packages are required for this repository since it uses only the built-in Python libraries (`threading` and `time`).
