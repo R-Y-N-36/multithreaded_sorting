@@ -1,30 +1,32 @@
-# Concurrent Sorting Algorithms in Python
 
-## Overview
+# Multithreaded Sorting Algorithms
 
-This Python script showcases the concurrent implementation of three popular sorting algorithms – Merge Sort, Bubble Sort, and Quick Sort – using multithreading. The script employs the `threading` module to execute sorting functions concurrently on the same input data array. A locking mechanism is integrated to ensure thread safety during execution.
+This repository implements three popular sorting algorithms (Merge Sort, Quick Sort, and Bubble Sort) using multithreading in Python. Each algorithm runs in its own thread, demonstrating basic concurrency and synchronization using locks.
 
-## Sorting Algorithms
+## Table of Contents
+- [Algorithms](#algorithms)
+- [Usage](#usage)
+- [Requirements](#requirements)
+- [License](#license)
 
-### 1. Merge Sort
-- Efficient divide-and-conquer algorithm.
-- Splits the array, recursively sorts subarrays, and merges them.
-
-### 2. Bubble Sort
-- Simple sorting algorithm with repeated passes.
-- Compares adjacent elements and swaps them if they are in the wrong order.
-
-### 3. Quick Sort
-- Fast and widely used sorting algorithm.
-- Selects a pivot, partitions the array, and recursively sorts the partitions.
+## Algorithms
+1. **Merge Sort**: A divide-and-conquer algorithm that sorts by recursively dividing the array into halves, sorting each half, and then merging the sorted halves.
+2. **Quick Sort**: Another divide-and-conquer algorithm that selects a 'pivot' element and partitions the array into elements less than and greater than the pivot, recursively sorting the partitions.
+3. **Bubble Sort**: A simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 
 ## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Multithreaded-Sorting-Algorithms.git
+   cd Multithreaded-Sorting-Algorithms
+   ```
 
-1. Define the input data in the `data` array.
-2. Threads are created for each sorting algorithm using the `Thread` class.
-3. Threads are started and joined for synchronized execution.
+2. Run the `main.py` file to execute all sorting algorithms in parallel:
+   ```bash
+   python main.py
+   ```
 
-## Execution
+## Requirements
+- Python 3.x
 
-```bash
-python Main.py
+No additional packages are required for this repository since it uses only the built-in Python libraries (`threading` and `time`).
